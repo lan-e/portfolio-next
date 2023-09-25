@@ -30,7 +30,7 @@ export default function Contact() {
         <Loader />
       ) : (
         <PageLayout title="Let's work together!">
-          <div className="flex justify-between w-48">
+          <div className="flex justify-between w-60">
             {icons.map(([icon, link]) => (
               <a
                 href={link}
