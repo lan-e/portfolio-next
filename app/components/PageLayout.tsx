@@ -8,7 +8,7 @@ interface PageTypes {
 
 export default function PageLayout({ children, title }: PageTypes) {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 bg-slate-100 dark:bg-slate-800">
+    <main className="flex min-h-screen flex-col items-center p-12 bg-slate-100 dark:bg-slate-800">
       <Nav />
       <PageTitle title={title} />
       {children}

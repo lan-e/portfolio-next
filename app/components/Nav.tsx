@@ -3,7 +3,7 @@ import ThemeSwitch from "./ThemeSwitcher";
 
 export default function Nav() {
   return (
-    <nav className="flex justify-center items-center space-x-4">
+    <nav className="flex flex-col sm:flex-row justify-center items-center pb-12">
       {[
         ["Home", "/"],
         ["Projects", "/projects"],
