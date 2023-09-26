@@ -18,7 +18,7 @@ export default function ProjectTabs() {
       "Mini Sofascore",
       "https://minisofanela.vercel.app/",
       "img/program/sofa.jpg",
-      "React, Next, Typescript, Zeplin, Sofascore API",
+      "React, Next, Typescript, Sofascore Academy API",
     ],
     [
       "Web shop",
@@ -75,7 +75,7 @@ export default function ProjectTabs() {
       "Choncha app",
       "https://choncha.eu/?lang=en",
       "/img/program/chonchanative.jpg",
-      "React Native, Expo, Vercel",
+      "React Native, Expo",
     ],
   ];
 
@@ -86,14 +86,14 @@ export default function ProjectTabs() {
           <li className="mr-2">
             <a
               href="#web"
-              className={`inline-flex items-center justify-center p-4 border-b-2 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group ${
-                isTabActive === "web" ? "text-indigo-600 border-blue-600" : ""
+              className={`inline-flex items-center justify-center p-4 border-b-2   group ${
+                isTabActive === "web" ? "text-indigo-600 border-indigo-500" : ""
               }`}
               aria-current="page"
               onClick={() => handleTabClick("web")}
             >
               <svg
-                className={`w-4 h-4 mr-2 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300 ${
+                className={`w-4 h-4 mr-2 text-gray-400 dark:text-gray-500  ${
                   isTabActive === "web"
                     ? "text-indigo-600 border-blue-600 dark:text-indigo-600 dark:border-blue-600"
                     : ""
@@ -117,13 +117,15 @@ export default function ProjectTabs() {
           <li className="mr-2">
             <a
               href="#apps"
-              className={`inline-flex items-center justify-center p-4 border-b-2 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group ${
-                isTabActive === "apps" ? "text-indigo-600 border-blue-600" : ""
+              className={`inline-flex items-center justify-center p-4 border-b-2  group ${
+                isTabActive === "apps"
+                  ? "text-indigo-600 border-indigo-500"
+                  : ""
               }`}
               onClick={() => handleTabClick("apps")}
             >
               <svg
-                className={`w-4 h-4 mr-2 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300 ${
+                className={`w-4 h-4 mr-2 text-gray-400 dark:text-gray-500 ${
                   isTabActive === "apps"
                     ? "text-indigo-600 border-blue-600 dark:text-indigo-600 dark:border-blue-600"
                     : ""

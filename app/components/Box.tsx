@@ -30,7 +30,7 @@ export default function Box({
         <a href={`${projectLink}`} target="_blank" rel="noopener noreferrer">
           <Button title={title} />
         </a>
-        <div className="text-slate-500 dark:text-slate-400 mt-2 text-sm w-96">
+        <div className="text-slate-600 dark:text-slate-400 text-center text-sm">
           {caption}
         </div>
       </div>

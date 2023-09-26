@@ -5,7 +5,7 @@ import type { ModalOptions, ModalInterface } from "flowbite";
 
 interface stateType {
   isModalVisible: boolean;
-  setIsModalVisible: (isVIsible: boolean) => void;
+  setIsModalVisible: (isVisible: boolean) => void;
 }
 
 export default function OpenModal({
@@ -47,7 +47,7 @@ export default function OpenModal({
       } w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full`}
     >
       <div className="relative w-full max-w-2xl max-h-full">
-        <div className="relative bg-slate-100 dark:bg-slate-800 text-black dark:text-white rounded-lg shadow">
+        <div className="relative bg-slate-100 dark:bg-slate-800 text-black dark:text-white rounded-lg shadow w-sreen sm:w-full">
           <div className="flex items-start justify-between p-5 border-b rounded-t dark:border-gray-600">
             <h3 className="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-white">
               More about me
@@ -76,7 +76,7 @@ export default function OpenModal({
             </button>
           </div>
           <div className="p-6 space-y-6">
-            <h3 className="text-xl text-left font-bold mt-6 dark:text-white w-96">
+            <h3 className="text-xl text-left font-bold mt-6 dark:text-white">
               Other projects and experience
             </h3>
             <div className="text-justify">
@@ -96,7 +96,7 @@ export default function OpenModal({
                 Croatia&#34;.
               </p>
             </div>
-            <h3 className="text-xl text-left font-bold mt-6 dark:text-white w-96">
+            <h3 className="text-xl text-left font-bold mt-6 dark:text-white">
               Personality
             </h3>
             <div className="flex flex-col sm:flex-row justify-center justify-between">
